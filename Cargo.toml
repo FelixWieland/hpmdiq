@@ -1,0 +1,15 @@
+[package]
+name = "hpmdiq"
+version = "0.1.1"
+edition = "2018"
+
+[lib]
+name = "hpmdiq"
+crate-type = ["cdylib"]
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "gzip"] }
+
+[dependencies.pyo3]
+version = "0.14.5"
+features = ["extension-module"]
